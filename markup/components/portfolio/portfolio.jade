@@ -1,0 +1,15 @@
+include ../title/title
+mixin portfolio(data)
+  section.portfolio
+    .portfolio-content.content
+      +title('Курс идеально подойдет для')
+      ul.portfolio-advantages
+        li Конструкторов, проектировщиков, технологов, архитекторов, дизайнеров
+        li Преподавателей компьютерной графики
+        li Студентов и школьников старших классов, которым AutoCAD интернес, или необходим по учебе
+      .portfolio-wrapper
+        +title('Работы учеников')
+        .portfolio-items
+          img(src='static/img/assets/portfolio/autocad.jpg')
+          img(src='static/img/assets/portfolio/autocad.jpg')
+          img(src='static/img/assets/portfolio/autocad.jpg')
