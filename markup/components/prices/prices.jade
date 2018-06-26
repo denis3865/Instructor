@@ -1,0 +1,71 @@
+include ../title/title
+include ../button/button
+mixin prices(data)
+  section.prices
+    .prices-content.content
+      +title('Стоимость и формы обучения')
+      .prices-items
+
+        //- Prices Item
+        .prices-item
+          .prices-item__content
+            .prices-name 
+              h4 Индивидуально
+              div или
+              h4 По Skype
+            .prices-quantity
+              .prices-quantity__hours 18 ак.ч
+              .prices-quantity__lesons 5 занятий
+            .price 17 990 ₽
+            .prices-button
+              +button('Записаться')
+        //- Prices Item
+        .prices-item
+          .prices-item__content
+            .prices-name 
+              h4 В группе
+            .prices-quantity
+              .prices-quantity__hours 18 ак.ч
+              .prices-quantity__lesons 5 занятий
+            .price 17 990 ₽
+            .prices-button
+              +button('Записаться')
+
+        //- Prices Item
+        .prices-item.price-item__video
+          .prices-item__content
+            .prices-name 
+              h4 Видеокурс
+            ul.prices-list
+              li Низкая стоимость обучения
+              li Обучение в ближайшее время 
+              li Персональный график и темп обучения
+              li Обучайтесь из любой точки мира 
+              li Проверка домашних заданий
+              li Skype-консультация с преподавателем
+              li Доступ к лекциям не ограничен по времени
+              li Электронный конспект курса
+            .prices-link
+              a(href='#') Подробнее
+            .prices-quantity
+              .prices-quantity__hours 20 видеоколекций 
+              .prices-quantity__lesons 10 заданий
+            .price.rmw 6 590 ₽
+            .price.new 4 990 ₽
+            .prices-button
+              +button('Записаться')
+            
+        //- Prices Item
+        .prices-item
+          .prices-item__content
+            .prices-name 
+              h4 Корпоративно
+            .prices-quantity
+              .prices-quantity__hours 18 ак.ч
+              .prices-quantity__lesons 5 занятий
+            .price 17 990 ₽
+            .prices-button
+              +button('Записаться')
+        
+        
+            

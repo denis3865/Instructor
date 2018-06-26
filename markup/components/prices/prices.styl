@@ -1,0 +1,93 @@
+.prices
+  padding-bottom 100px 
+  &-items
+    &::after
+      content ''
+      clear both
+      display block
+  &-item
+    float left
+    width: 23.03473492%
+    margin-right 2.6%
+    border-radius: 10px
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.25); 
+    background #ffffff
+    &__content
+      width 81.34920635%
+      margin 0 auto
+      padding-top 35px
+      padding-bottom 20px
+    &:last-child
+      margin-right 0
+    &.price-item__video
+      .prices-name
+        min-height: 40px
+      .prices-quantity
+        padding-bottom: 30px
+  &-link
+    text-align center
+    a
+      text-transform uppercase
+      set-font-size(12px)
+      color: $accentColor
+  &-name 
+    text-align: center
+    min-height: 85px
+    color: #2d323c
+    set-font-size(25px)
+    line-height 1
+    h4
+      font-family $PTBold
+      color $accentColor
+      display inline-block
+      position relative
+      &::after
+        content '?'
+        set-font-size(15px)
+        width 24px
+        height 24px
+        border-radius: 50%
+        color: $titleColor
+        border: 1px solid $titleColor
+        border-radius: 50%
+        display flex
+        justify-content: center
+        align-items: center
+        opacity 0.65
+        position absolute
+        right -30px
+        top: 0
+        cursor pointer
+        transition all 0.3s ease 
+      &:hover::after
+        color: $accentColor
+        border: 1px solid $accentColor
+        opacity 1
+  &-quantity
+    color: #171a1a
+    text-align: center
+    padding-bottom 60px
+    padding-top 10px
+  &-list
+    margin 0
+    padding-left: 20px
+    set-font-size(12px)
+    list-style-type: disc
+    li
+      color #5b6165
+      line-height 1.4
+  .price
+    set-font-size(25px)
+    text-align center
+    color: #171a1a
+    padding-bottom 30px
+    &.rmw
+      text-decoration: line-through
+      padding-bottom 0
+    &.new
+      color #eb193b
+      padding-bottom 30px
+  .button
+    width 100%
+    a
+      width 100%
