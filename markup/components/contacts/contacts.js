@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
+if(document.getElementById('map')){    
 ymaps.ready(init);
 var myMap;
 
@@ -17,5 +18,5 @@ function init(){
 
     myMap.geoObjects.add(myPlacemark);
 };
-
+}
 });

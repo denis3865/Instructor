@@ -1,0 +1,27 @@
+ul.breadcrumbs
+  display flex
+  align-items: center
+  li
+    padding-right: 30px
+    position relative
+    &::after
+      content '>'
+      set-font-size(18px)
+      color: $accentColor
+      position: absolute;
+      right: 15px;
+      font-family $PTRegular
+      font-size: 15px;
+      top: 50%;
+      margin-right -3px
+      margin-top: -10px;
+    a
+      set-font-size(18px)
+      color: $accentColor
+      font-family $PTRegular
+    &.active
+      &::after
+        content: ''
+      a
+        color: #ffffff
+    
