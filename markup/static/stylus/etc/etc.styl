@@ -158,6 +158,42 @@
 
 
 @media only screen and (max-width : 768px)
+  .header-content
+    justify-content: space-between
+  .header-contacts
+    display: none
+  nav.menu
+    display block
+    top: 100%;
+    background: #0e1012;
+    left: 0;
+    width: 100%;
+    position absolute
+    padding-bottom: 20px
+    a
+      font-size: 1rem
+    .menu-list
+      width: 85.46875%;
+      margin: 0 auto;
+      flex-direction: column;
+      align-items: flex-start;
+      .submenu-list
+        display: block;
+        background: none;
+        color: #fff;
+        position: static;
+        line-height: unset;
+        padding-left: 10px;
+        height: auto;
+        flex-direction: column
+        align-items: flex-start
+        a
+          font-size: 0.75rem
+      & > li
+        margin-bottom 5px
+      
+  .burger-menu
+    display block
   .courses-item__left
     display none
   .courses-item__right
@@ -383,6 +419,17 @@
     border: none
     a
       color: #fff
+  
+  .header .logo
+    width: 40%
+  .logo-name
+    font-size 1.4rem
+  .logo-subname
+    font-size: 0.7rem
+    margin-top: 4px
+
+
+
 @media only screen and (max-width : 480px)
   html
     font-size: 12px
