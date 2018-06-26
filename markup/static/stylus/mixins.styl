@@ -1,0 +1,59 @@
+// Mixins.
+
+m-nl()
+    margin 0
+    padding 0
+    text-indent 0
+    list-style none
+    list-style-position outside
+
+m-cf()
+    &:before, &:after
+        display table
+        content ""
+
+    &:after
+        clear both
+
+    .lt-ie8 &
+        zoom 1
+
+
+m-blocks-justify()
+    text-align justify
+    text-justify newspaper
+
+
+// You can add your own mixins here:
+// You can add your own mixins here:
+
+
+placeholder()
+	&::-webkit-input-placeholder
+		{block}
+	&:-moz-placeholder
+		{block}
+	&::-moz-placeholder
+		{block}
+	&:-ms-input-placeholder
+		{block}
+
+set-font-size(value) {
+  font-size: value; /* add PX (or original value) as backup */
+
+  if (value is inherit) {
+      /* do nothing, "inherit" has no unit */
+  } else {
+      font-size: remify(value);
+  }
+}
+
+remify(value) { /* separate mixin, so it can be used elsewhere */
+  u = unit(value);
+
+  if (u is 'px') {
+      return unit(value/16, 'rem');
+  } else {
+      return unit(value, u);
+  }
+}

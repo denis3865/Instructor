@@ -1,0 +1,90 @@
+mixin footer(data)
+  footer.footer
+    .footer-top
+      .footer-content.content
+        .footer-items
+          .footer-item
+            .footer-item__name Курсы
+            .footer-item__links
+              ul
+                li
+                  a(href='#') Autodesk Autocad 2D
+                li
+                  a(href='#') Autodesk Autocad 3D
+                li
+                  a(href='#') Autodesk Inventor
+                li
+                  a(href='#') Solideworks
+                li
+                  a(href='#') Аскон Компас-график
+          .footer-item
+            .footer-item__name Учебники
+            .footer-item__links
+              ul
+                li
+                  a(href='#') Начертательная геометрия
+                li
+                  a(href='#') Инженерная графика
+                li
+                  a(href='#') Компьютерная графика:
+                ul.sublist
+                  li
+                    a(href='#') Уроки по AutoCAD
+                  li
+                    a(href='#') Уроки по Inventor
+                  li
+                    a(href='#') Уроки по Компасу
+                  li
+                    a(href='#') Уроки по Solidworks
+          .footer-item.footer-item__contacts.active
+            .footer-item__name Контакты
+            .footer-item__links
+              ul
+                li
+                  a(href='#')
+                    .footer-item__icon
+                      != jadeHelpers.Icon.call(locals, {iconName: 'marker', className: 'marker', iconWidth: '17', iconHeight: '17'})
+                    .footer-item__text Санкт Петербург
+                li
+                  a(href='tel:+79129219292')
+                    .footer-item__icon
+                      != jadeHelpers.Icon.call(locals, {iconName: 'phone', className: 'phone', iconWidth: '17', iconHeight: '17'})
+                    .footer-item__text +7 921 921-92-92
+
+                li
+                  a(href='#')
+                    .footer-item__icon
+                      != jadeHelpers.Icon.call(locals, {iconName: 'chat', className: 'chat', iconWidth: '17', iconHeight: '17'})
+                    .footer-item__text Написать сообщение
+                li
+                  a(href='mailto:hi@cadinstructor.org')
+                    .footer-item__icon
+                      != jadeHelpers.Icon.call(locals, {iconName: 'mail', className: 'mail', iconWidth: '17', iconHeight: '17'})
+                    .footer-item__text hi@cadinstructor.org
+                
+          .footer-item.footer-item__social
+            .footer-item__name Заходите в паблики
+            .footer-item__links
+              ul
+                li
+                  a(href='#')
+                    != jadeHelpers.Icon.call(locals, {iconName: 'vk', className: 'vk', iconWidth: '40', iconHeight: '40'})
+                li
+                  a(href='#')
+                    != jadeHelpers.Icon.call(locals, {iconName: 'fb', className: 'fb', iconWidth: '40', iconHeight: '40'})
+                li
+                  a(href='#')
+                    != jadeHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram', iconWidth: '40', iconHeight: '40'})
+                li
+                  a(href='#')
+                    != jadeHelpers.Icon.call(locals, {iconName: 'gp', className: 'gp', iconWidth: '40', iconHeight: '40'})
+
+    //-Footer Bottom
+    .footer-bottom
+      .footer-content__bottom.content
+        .footer-bottom__left
+          p &copy; CADInstructor. Все права защищены
+          p Обучение CAD-системам в Санкт-Петербурге и дистанционно : курсы AutoCAD, Invento, Компас, Solidworks, Revit.
+        .footer-bottom__right 
+          img(src='static/img/assets/footer/bank1.png')
+          img(src='static/img/assets/footer/bank2.png')

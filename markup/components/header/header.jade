@@ -1,0 +1,14 @@
+include ../menu/menu
+include ../logo/logo
+mixin header(data)
+  header.header
+    .header-content.content
+      +logo()
+      +menu()
+      .header-contacts
+        .phone
+          .phone-icon
+            != jadeHelpers.Icon.call(locals, {iconName: 'phone', className: 'phoneIcon', iconWidth: '16', iconHeight: '16'})
+          .phone-number 
+            a( href='tel:+79219757257') +7 921 975 72 57
+        .city Санкт-Петербург

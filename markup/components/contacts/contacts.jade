@@ -1,0 +1,35 @@
+include ../title/title
+mixin contacts(data)
+  section.contacts
+    #map
+    .contacts-content.content
+      +title('Контакты')
+      .contacts-items
+        .contact-item
+          .contact-item__content
+            .contact-item__icon
+              != jadeHelpers.Icon.call(locals, {iconName: 'marker', className: 'marker', iconWidth: '50', iconHeight: '50'})
+            .contact-item__text Россия, Санкт-Петербург
+        
+        //- Contact Item
+        .contact-item
+          .contact-item__content
+            .contact-item__icon
+              != jadeHelpers.Icon.call(locals, {iconName: 'phone', className: 'phone', iconWidth: '50', iconHeight: '50'})
+            .contact-item__text 
+              a(href="tel:+79219757257") +7 921 975-72-57
+        
+        //- Contact Item
+        .contact-item
+          .contact-item__content
+            .contact-item__icon
+              != jadeHelpers.Icon.call(locals, {iconName: 'chat', className: 'chat', iconWidth: '50', iconHeight: '50'})
+            .contact-item__text Написать сообщение
+        
+        //- Contact Item
+        .contact-item
+          .contact-item__content
+            .contact-item__icon
+              != jadeHelpers.Icon.call(locals, {iconName: 'mail', className: 'mail', iconWidth: '50', iconHeight: '50'})
+            .contact-item__text
+              a(href='mailto:hi@cadinstructor.org') hi@cadinstructor.org

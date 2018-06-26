@@ -1,0 +1,100 @@
+footer.footer
+  background: #1b1d22
+  padding-top: 50px;
+  .footer-top
+    padding-bottom: 60px
+    border-bottom: 1px solid #33383f
+  .footer-items
+    display flex
+    justify-content: space-between
+  .footer-item
+    width 25%
+    &__name
+      set-font-size(20px)
+      color: #e5e5e5
+      font-family: $PTBold
+      margin-bottom: 25px
+    ul
+      margin 0
+      display inline-block
+    li
+      margin-bottom: 5px
+    a
+      color: $accentColor
+      set-font-size(15px)
+      transition: all 0.15s ease 
+      &:hover
+        color: #fff
+    ul.sublist
+      li
+        padding-left: 15px
+        position relative
+        &::before
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: 10px;
+          width: 5px;
+          height: 5px;
+          background: #2f7cd9;
+          transition: all 0.15s ease
+          border-radius: 50%;
+        &:hover::before
+          background: #ffffff
+  .footer-item.footer-item__contacts
+    li 
+      margin-bottom 10px
+      &:hover
+        svg
+          fill: #fff
+        .footer-item__text
+          color: #fff
+      a
+        display flex
+        align-items: center
+      &:first-child
+        a
+          pointer-events: none 
+          cursor pointer
+    .footer-item__icon
+      width 20px
+      margin-right 10px
+    .footer-item__text
+      position relative
+      top: -3px
+      transition: all 0.3s ease
+    svg
+      fill: $accentColor
+      transition: all 0.3s ease
+  .footer-item.footer-item__social
+    svg
+      fill: $accentColor
+      transition: all 0.3s ease
+    ul
+      display flex
+      align-items: center
+      li
+        margin-right: 10px
+        &:hover
+          svg
+            fill : #fff
+  .footer-bottom
+    padding-top: 40px
+    padding-bottom: 40px
+  .footer-content__bottom
+    display flex
+    align-items: center
+    justify-content: space-between
+  .footer-bottom__left
+      width 65.8135283%
+      p
+        margin: 0
+        line-height 1.4
+        set-font-size(12px)
+        color: #e5e5e5
+  .footer-bottom__right
+      width: 34.1864717%
+      display flex
+      align-items: center
+      img:first-child
+        margin-right: 15px
