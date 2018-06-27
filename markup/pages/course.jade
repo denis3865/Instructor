@@ -13,6 +13,7 @@ html(class="no-js", lang="ru")
   include ../components/reviews/reviews
   include ../components/why-me/why-me
   include ../components/apply/apply
+  include ../components/links/links
   include ../components/footer/footer
   head
     +head(head.defaults)
@@ -39,7 +40,9 @@ html(class="no-js", lang="ru")
 
     //- +why-me()
     
-    +apply()
+    //- +apply()
+
+    +links()
 
     +footer()
 

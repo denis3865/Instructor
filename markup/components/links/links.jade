@@ -1,0 +1,25 @@
+include ../title/title
+include ../button/button
+mixin links(data)
+  section.links
+    .links-content.content
+      +title('Полезные ссылки')
+      .links-items
+        //- Links Item
+        .links-item
+          .links-item__left
+            +button('Уроки AUTOCAD')
+          .links-item__right
+            p На нашем сайте представлены авторские курсы и пошаговые пособия по изучению программы. Все уроки в основном расчитаны на новичков
+        //- Links Item
+        .links-item
+          .links-item__left
+            +button('Видеоуроки AUTOCAD')
+          .links-item__right
+            p В этом разделе вы найдете авторские видеоуроки где наглядно показаны приемы работы в программе
+        //- Links Item
+        .links-item
+          .links-item__left
+            +button('Скачать AUTOCAD')
+          .links-item__right
+            p Для прохождения курса и выполнения заданий потребуется программа AutoCAD. На официальном сайте Autodesk, после регистрации, доступна бесплатная версия для обучения: http://www.autodesk.com/education/free-software/autocad
