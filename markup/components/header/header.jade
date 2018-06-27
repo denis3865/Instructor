@@ -7,10 +7,11 @@ mixin header(data)
       +menu()
       .header-contacts
         .phone
-          .phone-icon
-            != jadeHelpers.Icon.call(locals, {iconName: 'phone', className: 'phoneIcon', iconWidth: '16', iconHeight: '16'})
-          .phone-number 
-            a( href='tel:+79219757257') +7 921 975 72 57
+          a(href='tel:+79219757257')
+            .phone-icon
+              != jadeHelpers.Icon.call(locals, {iconName: 'phone', className: 'phoneIcon', iconWidth: '16', iconHeight: '16'})
+            .phone-number 
+              a( href='tel:+79219757257') +7 921 975 72 57
         .city Санкт-Петербург
       .burger-menu
         .div

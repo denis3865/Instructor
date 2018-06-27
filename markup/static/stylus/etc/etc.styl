@@ -170,6 +170,8 @@
     width: 100%;
     position absolute
     padding-bottom: 20px
+    z-index 999
+    display none
     a
       font-size: 1rem
     .menu-list
@@ -271,7 +273,7 @@
     padding-top: 20px
     padding-bottom: 0
   .about-information__text p
-    line-height 1
+    line-height 1.2
   .about-information__content .button
     bottom 20px
   .about-information__left
@@ -302,7 +304,7 @@
     width 90.625%
     margin 0 auto
   .courses-item__text p
-    line-height 1
+    line-height 1.2
     letter-spacing: 0
   .courses-type__price.rmv
     margin-left 30%
@@ -329,7 +331,7 @@
     .teacher-name
       set-font-size(40px)
     .teacher-information p
-      line-height 1
+      line-height 1.2
       letter-spacing: 0
   .clients-item
     width 100%
@@ -348,7 +350,7 @@
     set-font-size(40px)
   .reviews-item p
     set-font-size(22px)
-    line-height 1
+    line-height 1.2
     letter-spacing: 0.1px
   .reviews-item__course
     set-font-size(35px)
@@ -396,9 +398,6 @@
     .contact-item
       border-radius 0
       margin-bottom: 20px 
-    .contact-item:nth-child(3),
-    .contact-item:nth-child(4)
-      display none
   .reviews-button
     display none
   .button
@@ -414,6 +413,7 @@
       margin-bottom 20px
       a
         width 100%
+        font-size 1.5rem
   .button.transparent
     background: $accentColor
     border: none
@@ -428,7 +428,12 @@
     font-size: 0.7rem
     margin-top: 4px
 
-
+  .courses-item__title
+    h4
+      font-size: 2rem
+  .courses-type__price,
+  .courses-type__name h5
+    font-size: 1.5rem
 
 @media only screen and (max-width : 480px)
   html
