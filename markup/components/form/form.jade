@@ -1,0 +1,63 @@
+mixin form(data)
+  form#apply-form
+    .form-group
+      .form-group__left
+        label(for='name_course') Наименование курса
+      .form-group__right
+        select(id='name_course')
+          option(value='Курс Autodesk AutoCAD 2D-профессионал') Курс Autodesk AutoCAD 2D-профессионал
+          option(value='Курс Autodesk AutoCAD 3D-моделирование') Курс Autodesk AutoCAD 3D-моделирование
+          option(value='Базовый курс Autodesk Inventor') Базовый курс Autodesk Inventor
+          option(value='Базовый курс SolidWorks') Базовый курс SolidWorks
+          option(value='Базовый курс КОМПАС-3D') Базовый курс КОМПАС-3D
+          option(value='Курс КОМПАС-График Машиностроение') Курс КОМПАС-График Машиностроение
+    .form-group
+      .form-group__left
+        label(for='form_course') Форма обучения
+      .form-group__right
+        select(id='form_course')
+          option(value="Очно") Очно
+          option(value="Дистанционно по Skype") Дистанционно по Skype
+          option(value="Онлайн видео-курс") Онлайн видео-курс
+          option(value="Корпоративно") Корпоративно
+    .form-group.error
+      .form-group__left
+        label(for='your_name') ФИО
+      .form-group__right
+        input(type='text' required id='your_name' placeholder='Бочков Сергей Андреевич')
+    .form-group.correct
+      .form-group__left
+        label(for='your_email') E-mail
+      .form-group__right
+        input(type='email' required id='your_email' placeholder='hi@cadinstructor.org')
+    .form-group
+      .form-group__left
+        label(for='your_phone') Телефон
+      .form-group__right
+        input(type='tel' required id='your_phone' placeholder='+7 (921) 975-72-57')
+     .form-group
+      .form-group__left
+        label(for='your_text') Коментарий
+      .form-group__right
+        textarea(id='your_text') 
+    .form-group
+      input(type='checkbox' class='checkbox' checked required id='offer_course')
+      label(for='offer_course') Принимаю
+        a(href='#') договор оферты
+        | и даю согласие на обработку моих
+        a(href='#') персональных данных.
+    
+    .form-price
+      .form-price__name Стоимость
+      .form-price__number
+        .form-price__new 4 490 Р.
+        .form-price__rmw 6 590 Р.
+    .form-buttons
+      button.button
+        a(href='#') Записаться на обучение
+      button.button
+        a(href='#') Купить в подарок
+    .form-download
+      .form-download__format PDF
+      .form-download__link
+        a(href='#') Скачать договор с программой курса

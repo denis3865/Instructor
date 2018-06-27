@@ -1,0 +1,8 @@
+include ../title/title
+include ../form/form
+mixin apply(data)
+  section.apply
+    .apply-content.content
+      +title('Записаться на обучение')
+      .apply-form__wrapper
+        +form()

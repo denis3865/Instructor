@@ -9,6 +9,10 @@ html(class="no-js", lang="ru")
   include ../components/programme/programme
   include ../components/allteachers/allteachers
   include ../components/process/process
+  include ../components/sertificat/sertificat
+  include ../components/reviews/reviews
+  include ../components/why-me/why-me
+  include ../components/apply/apply
   include ../components/footer/footer
   head
     +head(head.defaults)
@@ -27,8 +31,16 @@ html(class="no-js", lang="ru")
 
     //- +allteachers()
 
-    +process()
+    //- +process()
+
+    //- +sertificat()
+
+    //- +reviews()
+
+    //- +why-me()
     
+    +apply()
+
     +footer()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')

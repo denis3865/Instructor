@@ -1,0 +1,90 @@
+form
+  width: 65.90493601%
+  margin 0 auto
+  .form-group
+    margin-bottom 30px
+    display flex
+    justify-content: space-between
+    &.error
+      input
+        border 1px solid #cb2424
+    &.correct
+      input
+        border: 1px solid $accentColor
+    &__left
+      width: 34.95145631%
+      margin-top 5px
+    &__right
+      width 65.18723994%
+      input,
+      textarea,
+      select
+        width calc(86.17021277% - 20px)
+        height 36px
+        border: 1px solid #99a9bf
+        background: transparent
+        outline: none
+        border-radius: 5px
+        color #434343
+        padding-left 20px
+      select
+        width 86.17021277%
+      textarea
+        height 90px
+  label,
+  .form-price__name
+    set-font-size(20px)
+    color: #434a54
+    font-family $PTBold
+  .form-price__name
+    set-font-size(25px) 
+  input.checkbox
+    display none
+    & + label
+      position relative
+      padding-left 40px
+      set-font-size(18px)
+      a
+        color: $accentColor
+        margin: 0 5px
+    & + label::before
+      content ''
+      position absolute
+      width 18px
+      height 18px
+      background : #ffffff
+      border: 1px solid #434343
+      left 0
+      cursor pointer
+      top 4px
+    &:checked + label::before
+      content: ''
+      background: url('../img/assets/form/checked.svg') no-repeat center
+      background-size 13px
+  .form-price
+    width 52.0110957%
+    display flex
+    justify-content: space-between
+    padding-bottom 30px
+    &__new
+      set-font-size(34px)
+      font-family $PTBold
+      color #cb2424
+    &__rmw
+      set-font-size(25px)
+      font-family $PTBold
+      color: #434a54
+      text-decoration: line-through
+  .form-download
+    margin-top 35px
+    display flex 
+    align-items: center
+    &__format
+      set-font-size(15px)
+      padding: 2px 5px
+      color: $accentColor
+      border: 1px solid $accentColor
+      margin-right 15px
+    &__link a
+      set-font-size(18px)
+      color: $accentColor
