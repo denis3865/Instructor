@@ -14,6 +14,7 @@ html(class="no-js", lang="ru")
   include ../components/why-me/why-me
   include ../components/apply/apply
   include ../components/links/links
+  include ../components/questions/questions
   include ../components/footer/footer
   head
     +head(head.defaults)
@@ -42,7 +43,9 @@ html(class="no-js", lang="ru")
     
     //- +apply()
 
-    +links()
+    //- +links()
+
+    +questions()
 
     +footer()
 

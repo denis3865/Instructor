@@ -1,16 +1,10 @@
 include ../title/title
-mixin contacts(data)
-  section.contacts
-    #map
-    .contacts-content.content
-      +title('Контакты')
-      .contacts-items
-        .contact-item
-          .contact-item__content
-            .contact-item__icon
-              != jadeHelpers.Icon.call(locals, {iconName: 'marker', className: 'marker', iconWidth: '50', iconHeight: '50'})
-            .contact-item__text Россия, Санкт-Петербург
-        //- Contact Item
+include ../breadcrumbs/breadcrumbs
+mixin questions(data)
+  section.questions
+    .questions-content.content
+      +title('Остались вопросы?')
+      .question-items
         .contact-item
           a(href='tel:+7 921 975-72-57')
             .contact-item__content
@@ -34,3 +28,5 @@ mixin contacts(data)
                 != jadeHelpers.Icon.call(locals, {iconName: 'mail', className: 'mail', iconWidth: '50', iconHeight: '50'})
               .contact-item__text
                 a(href='mailto:hi@cadinstructor.org') hi@cadinstructor.org
+      .question-breadcrumbs
+        +breadcrumbs().black
