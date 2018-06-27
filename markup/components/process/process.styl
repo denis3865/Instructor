@@ -1,0 +1,77 @@
+.process
+  padding-bottom 100px
+  &-item
+    padding-top: 70px
+    padding-bottom 70px
+    padding-left: 6%
+    padding-right 6%
+    background #ffffff
+    border-bottom-left-radius: 10px
+    border-bottom-right-radius: 10px
+    display: none
+    &.active
+      display block
+    &__wrapper
+      display flex
+      justify-content: space-between
+      align-items: center
+    &__left
+      width 42.0997921%
+      img
+        width 100%
+    &__right
+      width 54.7817048%
+      p
+        color: #171a1a
+  .process-tabs
+    display: table
+    table-layout: fixed
+    width: 100%
+    -webkit-transform: translateY(5px)
+    transform: translateY(5px)
+    margin-bottom: 0
+    >li
+      transition-duration: .25s
+      display: table-cell
+      list-style: none
+      set-font-size(25px)
+      color: $accentColor
+      text-align: center
+      padding: 20px 20px 25px 20px
+      position: relative
+      overflow: hidden
+      cursor: pointer
+
+      &:before
+        z-index: -1
+        position: absolute
+        content: ""
+        width: 100%
+        height: 120%
+        top: 0
+        left: 0
+        background-color: rgba(255, 255, 255, .3)
+        -webkit-transform: translateY(100%)
+        transform: translateY(100%)
+        transition-duration: .25s
+        border-radius: 5px 5px 0 0
+      
+		
+      &:hover
+        &:before
+          -webkit-transform: translateY(70%)
+          transform: translateY(70%)
+        
+		
+		
+      &.active
+        color: rgb(80, 85, 90)
+        
+        &:before
+          transition-duration: .5s
+          background-color: white
+          -webkit-transform: translateY(0)
+          transform: translateY(0)
+        
+
+	
