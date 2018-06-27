@@ -1,0 +1,51 @@
+include ../title/title
+mixin programme(data)
+  section.programme
+    .programme-content.content
+      +title('Программа курса')
+      .programme-items
+        //- Programme Item
+        .programme-item
+          .programme-item__title
+            .programme-title__text
+              h4 Тема 1. Интерфейс. Стартовые окна. Координаты.
+            .programme-title__video видеоурок
+            .programme-title__arrow
+              != jadeHelpers.Icon.call(locals, {iconName: 'sort-down', className: 'sort-down', iconWidth: '22', iconHeight: '12'})
+          .programme-content__wrapper
+            .programme-item__content
+              .programme-item__left
+                img(src='static/img/assets/programme/programme.jpg')
+              .programme-item__right
+                ul.programme-item__theory
+                  li Интерфейс AutoCAD
+                  li Стартовые окна
+                  li Координаты : абсолютные, относительные, декартовы, полярные
+                  li Настройка AutoCAD
+                  li Режим Сетка и Шаговая привязка
+                .programme-item__practice
+                  .programme-practice__title Практика
+                  .programme-practice__paragraph
+                    p Построение изображения деталей, используя различные типы координат
+          //- Programme Item
+        .programme-item
+          .programme-item__title
+            .programme-title__text
+              h4 Тема 2. Свойства примитивов
+            .programme-title__video видеоурок
+            .programme-title__arrow
+              != jadeHelpers.Icon.call(locals, {iconName: 'sort-down', className: 'sort-down', iconWidth: '22', iconHeight: '12'})
+          .programme-content__wrapper
+            .programme-item__content
+              .programme-item__left
+                img(src='static/img/assets/programme/programme.jpg')
+              .programme-item__right
+                ul.programme-item__theory
+                  li Цвет линий
+                  li Тексты линий
+                  li Вес линий
+                  li Слои
+                .programme-item__practice
+                  .programme-practice__title Практика
+                  .programme-practice__paragraph
+                    p Создание слоев и настройка их свойств

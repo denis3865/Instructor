@@ -1,0 +1,69 @@
+.programme
+  padding-bottom: 70px
+  .section-title
+    padding-bottom 45px
+  &-item
+    background: #ffffff
+    border-radius: 10px
+    box-shadow 2px 2px 7px 0px rgba(0,0,0,0.25)
+    padding-left: 5.9414991%
+    padding-right 3.6563071%
+    padding-top: 35px
+    padding-bottom 35px
+    margin-bottom 20px
+    &__title
+      display flex
+      align-items: center   
+      cursor pointer
+    &__content
+      display flex
+      padding-top 35px
+      justify-content: space-between
+    &__left
+      width 47.0171891%
+      margin-right 2.8816987%
+      height 265px
+      img
+        width 100%
+        height 265px
+        object-fit: cover 
+    &__right
+      width 50%
+    &__theory
+      padding-bottom 35px
+      margin 0
+      li
+        color: #171a1a
+        set-font-size(15px)
+        cursor pointer
+        transition all 0.3s ease
+        line-height 1.6 
+        &:hover
+          color: $accentColor
+    &.active
+      .programme-title__arrow
+        transform: rotate(180deg)
+  &-content__wrapper
+    display none
+  &-title__video
+    set-font-size(18px)
+    padding: 8px 25px
+    background $accentColor
+    padding-top 6px
+    margin-right: 35px
+    margin-left: auto
+    border-radius: 30px
+
+  &-practice
+    &__title
+      set-font-size(15px)
+      color #171a1a
+      font-family: $RobotoBold
+    &__paragraph
+      p
+        color: #171a1a
+        margin 0
+
+    &-title__arrow
+      svg
+        fill: $titleColor
