@@ -1,0 +1,62 @@
+include ../title/title
+mixin advantages(data)
+  section.advantages
+    .advantages-content.content
+      +title('Почему выбирают обучение у нас?')
+      .about-advantages
+        //- About Advantage 
+        .about-advantage
+          .about-advantage__icon
+            != jadeHelpers.Icon.call(locals, {iconName: 'teacher', className: 'teacher', iconWidth: '71', iconHeight: '62'})
+          .about-advantage__title
+            h5 Опытный преподаватель
+          .about-advantage__text
+            p Стаж преподавателя курсов — 35 лет. Преподает в СпбГПУ, ранее работал в СПбГИТМО, СПбГЭТУ, СПбГУСЭ, СПбГУГА. Сертифицированный преподаватель «Компас-График» и «Компас-3D».
+
+        //- About Advantage
+        .about-advantage
+          .about-advantage__icon
+            != jadeHelpers.Icon.call(locals, {iconName: 'discount', className: 'discount', iconWidth: '71', iconHeight: '62'})
+          .about-advantage__title
+            h5 Скидка Выпускникам
+          .about-advantage__text
+            p Получите скидку 7% на все курсы после прохождения одного.
+        
+        //- About Advantage
+        .about-advantage
+          .about-advantage__icon
+            != jadeHelpers.Icon.call(locals, {iconName: 'moneyback', className: 'moneyback', iconWidth: '71', iconHeight: '62'})
+          .about-advantage__title
+            h5 Гарантия возврата денег
+          .about-advantage__text
+            p Мы уверены в качестве курсов, его высоко оценивают и наши ученики. Если после первого занятия что-то не понравится, вернем стоимость курса (кроме корпоративного обучения).
+
+        
+        //- About Advantage
+        .about-advantage
+          .about-advantage__icon
+            != jadeHelpers.Icon.call(locals, {iconName: 'forms', className: 'forms', iconWidth: '71', iconHeight: '62'})
+          .about-advantage__title
+            h5 Все формы обучения
+          .about-advantage__text
+            p Честные и прозрачные условия обучения закреплены в договоре. Есть все формы занятий: частные, групповые, корпоративные, дистанционные и в формате видеоуроков.
+
+        
+        //- About Advantage
+        .about-advantage
+          .about-advantage__icon
+            != jadeHelpers.Icon.call(locals, {iconName: 'practice', className: 'practice', iconWidth: '71', iconHeight: '62'})
+          .about-advantage__title
+            h5 Максимум Практики
+          .about-advantage__text
+            p В курсе минимум теории. В основе обучения - решение конкретных практических задач.
+
+
+        //- About Advantage
+        .about-advantage
+          .about-advantage__icon
+            != jadeHelpers.Icon.call(locals, {iconName: 'konspect', className: 'konspect', iconWidth: '71', iconHeight: '62'})
+          .about-advantage__title
+            h5 Конспекты
+          .about-advantage__text
+            p Не нужно ничего записывать. На первом занятии выдаем краткий печатный конспект курса, а при дистанционном обучении — электронный конспект.

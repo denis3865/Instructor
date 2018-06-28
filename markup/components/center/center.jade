@@ -1,0 +1,25 @@
+include ../title/title
+include ../breadcrumbs/breadcrumbs
+include ../button/button
+mixin center(data)
+  section.center
+    .center-content.content
+      +breadcrumbs()
+      +title('Об обучающем центре')
+      .center-video
+        .fotorama
+          a(href='https://youtu.be/vjEueBT-fAU')
+      .about-information
+        .about-information__content.content
+          //- About Information Left
+          .about-information__left
+            .about-information__images.fotorama
+              img(src='static/img/assets/about/ab-infr.jpg')
+              img(src='static/img/assets/about/ab-infr.jpg')
+          //- About Information Right
+          .about-information__right
+            .about-information__text
+              p Меня зовут Бочков Андрей Леонидович, я преподаватель инженерной и компьютерной графики со стажем 35 лет, создатель обучающего центра CADinstructor.
+              p В вузах студенты учат теорию инженерной графики, технического рисунка и начертательной геометрии, но для инженерии или проектирования этого не хватает — нужно работать в САПР, чтобы эффективнее решать задачи и зарабатывать больше. 
+              p Учим рационально и эффективно использовать возможности систем автоматизированного проектирования: AutoCAD, Inventor, SolidWorks, «Компас-3D» и «Компас-График». 
+              p Обучаем и корпоративных клиентов. Каждый курс разработан индивидуально с учетом профиля предприятия. Сотрудники повышают квалификацию, что оптимизирует бизнес-процессы.

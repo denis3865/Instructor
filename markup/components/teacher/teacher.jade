@@ -1,7 +1,7 @@
 include ../title/title
 include ../button/button
 mixin teacher(data)
-  section.teacher
+  section.teacher&attributes(attributes)
     .teacher-content.content
       +title('Основатель и преподаватель')
       .teacher-information
