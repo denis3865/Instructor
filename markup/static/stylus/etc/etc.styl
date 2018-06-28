@@ -638,7 +638,7 @@
   .portfolio-advantages li
     min-height: 30px
   .portfolio-content.content
-    width: 100%
+    width: 90.625%
     .section-title,
     .portfolio-advantages
       width: 85.46875%
@@ -658,6 +658,89 @@
     li
       line-height 1
 
+  .process-content.content
+    width: 100%
+  .process 
+    padding-bottom: 70px
+    .process-tabs 
+      display flex
+      flex-direction: column
+      background: #ffffff
+      & > li
+        padding: 15px 5px 0px 5px
+        text-align: left
+        text-decoration: dashed
+        width: 90.625%
+        margin 0 auto
+        font-size: 2.5rem
+        border-bottom: 1px dashed $accentColor
+        &.active
+          border: none
+  .process-item__left,
+  .process-item__right
+    width: 100%
+  .process-item__right p
+    font-size: 1.4rem
+  .process-item__wrapper
+    flex-wrap: wrap
+
+  form
+    width: 90.625%
+    .form-price
+      width 80%
+    .form-group
+      margin-bottom 20px
+      flex-wrap: wrap
+    .form-group__left,
+    .form-group__right
+      width: 100%
+    .form-group__right
+      input,
+      textarea
+        width: calc(100% - 20px)
+      select
+        width: 100%
+    .form-group__left
+      margin-top 5px
+      margin-bottom 10px
+    .form-buttons
+      flex-wrap: wrap
+      .button
+        width 100%
+        margin-bottom 20px
+
+  .links-content.content
+    width: 100%
+    .section-title
+      width: 90.625%
+      margin: 0 auto
+    .links-item__left
+      width: 100%
+      padding-right: 0
+      .button
+        width: 100%
+        a
+          width: 100%
+    .links-item__right
+      width: 90.625%
+      margin: 0 auto
+      p
+        set-font-size(24px)
+        line-height 1
+    .links-item
+      flex-wrap: wrap
+
+  .questions-content.content
+    width: 100%
+    .section-title,
+    .question-breadcrumbs
+      width: 90.625%
+      margin: 0 auto
+    .contact-item
+      border-radius: 0
+      margin-bottom: 25px
+  .question-items
+    width: 100%
 @media only screen and (max-width : 480px)
   html
     font-size: 12px
@@ -693,3 +776,19 @@
       font-size: 1rem
     .footer-item__name
       font-size: 1.2rem
+
+  // COurse page
+  .portfolio-advantages li
+    font-size: 1.1rem
+  section.teacher.allteachers .teachers-names li
+    font-size: 1rem
+    white-space: nowrap
+  .programme-item__left img,
+  .programme-item__left 
+    height: auto
+  .prices .price, 
+  .prices-nmbr,
+  .prices-name h4
+    font-size: 1.8rem
+  .coursetop-video
+    height 380px

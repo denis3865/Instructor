@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+
 // Variables
 var clickedTab = $(".process-tabs > .active");
 var tabWrapper = $(".process-items");
@@ -49,4 +51,7 @@ $(".process-tabs > li").on("click", function() {
       
     });
   });
+});
+
+
 });
