@@ -3,6 +3,28 @@
   display inline-block
   border-radius: 5px
   transition all 0.4s ease
+  position relative
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    display: block
+    width: 0
+    padding-top: 0
+    border-radius: 100%
+    background-color: rgba(236, 240, 241, .3)
+    -webkit-transform: translate(-50%, -50%)
+    -moz-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    -o-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+  &:active:before 
+    width: 100%;
+    padding-top: 0;
+    transition: width .2s ease-out, padding-top .2s ease-out;
+    padding: 27px 0
+    border-radius: 0
   a
     text-transform uppercase
     color: #ffffff
@@ -14,7 +36,7 @@
     justify-content: center
     align-items: center
   &:hover
-    background-color: $accentColor;
+    background-color: #2e81d9
   &.transparent
     background: transparent
     border: 1px solid $accentColor
