@@ -49,6 +49,23 @@
     .contact-item__text a
       set-font-size(17px)
 
+  // COURSE PAGE
+  .prices-name h4
+    set-font-size(20px)
+    left -5px
+  section.teacher.allteachers 
+    .teachers-names
+      margin-bottom 40px
+  .process .process-tabs 
+    & > li
+      set-font-size(20px)
+      padding: 20px 15px 25px 15px
+  .sertificat-image
+    img
+      width 100%
+
+  form
+    width 80%
 
 @media only screen and (max-width : 992px)
   .about-video
@@ -156,6 +173,41 @@
     margin-top: 0
 
 
+  // Course Page
+  ul.breadcrumbs li
+    white-space: nowrap
+  .prices-name 
+    font-size:1rem
+    h4
+      font-size: 1rem
+      &::after
+        right -22px
+        set-font-size(12px)
+        width 16px
+        height 16px
+  .prices-item__content
+    padding-top 20px
+  section.prices
+    padding-bottom 50px
+
+  .process .process-tabs >li
+    set-font-size(17px)
+    padding: 20px 5px 25px 5px
+  .process-item
+    padding-top 30px
+    padding-bottom 3px
+
+  .portfolio-advantages li
+    line-height 1.5
+    margin-bottom: 15px
+  section.portfolio.sertificat .portfolio-advantages
+    margin-bottom 40px
+
+  section.teacher.allteachers .allteachers-images img
+    height auto
+    width 100%
+
+
 
 @media only screen and (max-width : 768px)
   .header-content
@@ -236,6 +288,69 @@
       line-height: 1.2
     .footer-bottom__left
       width 45%
+
+  ul.breadcrumbs 
+    li 
+      padding-right 15px
+      &::after
+        right 3.5px
+        margin-right: 0
+        margin-top -9px
+      a
+        set-font-size(16px)
+  .coursetop
+    padding-top 20px
+    padding-bottom 60px
+    &-content
+      width: 85.46875%
+    ul.coursetop-paragraph__list li
+      set-font-size(13px)
+
+  .prices-item
+    width 48%
+    margin-bottom 30px
+    &:nth-child(2n+1)
+      margin-right 4%
+    &:nth-child(2n)
+      margin-right 0
+  .programme-title__text
+    h4
+      set-font-size(20px)
+      line-height 1
+  .programme-title__video
+    display none
+  .programme-item__title
+    justify-content: space-between
+
+  .portfolio-advantages
+    margin-left 0
+  
+  section.teacher.allteachers 
+    .teachers-names li
+      set-font-size(20px)
+    .allteachers-items
+      width: 60%
+    .allteachers-images
+      width 40%
+    .teacher-button
+      text-align: left
+
+  .process .process-tabs >li
+    set-font-size(14px)
+  .process-item__right p
+    set-font-size(12px)
+    line-height 1.5
+  .apply-content.content
+    width 100%
+  form 
+    .form-price
+      width: 60%
+  .links-item 
+    margin-bottom: 20px
+    p
+      line-height 1.3
+      set-font-size(12px)
+  
 
 
 @media only screen and (max-width : 640px)
@@ -434,6 +549,114 @@
   .courses-type__price,
   .courses-type__name h5
     font-size: 1.5rem
+
+
+  // PAge course
+  ul.breadcrumbs
+    flex-wrap: wrap
+  
+  .coursetop
+    .content,
+    &-content
+      width 100%
+    &-video
+      height 360px
+    .course-top__paragraph,
+    .section-title,
+    .breadcrumbs
+      width: 90.625%
+      margin 0 auto
+    ul.coursetop-paragraph__list li
+      set-font-size(24px)
+    &-button
+      width 100%
+      .button
+        width: 100%
+        a
+          width 100%
+  .button a
+    font-size: 1.5rem
+  .prices-item
+    width 100%
+    background none
+    margin-right: 0
+    margin-bottom: 20px
+    &:nth-child(2n),
+    &:nth-child(2n+1)
+      width 100%
+      margin 0
+      margin-bottom: 20px
+  .prices-button
+    display: none
+  .prices-name
+    min-height auto
+    order: 1
+    div,
+    h4:nth-child(3)
+      display none
+    h4
+      set-font-size(40px)
+      &::after
+        content none
+  .prices-quantity
+    padding-bottom: 0
+    text-align: left
+    order : 3
+    width 100%
+    padding-top 0
+    set-font-size(24px)
+    color: #171a1a
+    position relative
+  .prices .price,
+  .prices-nmbr
+    order: 2
+    set-font-size(40px)
+    height 46px
+    padding-bottom: 0
+    color: #171a1a
+  .prices-item__content
+    width: 100%
+    display: flex
+    flex-flow: wrap
+    padding 0
+    justify-content: space-between
+
+  .prices-item.price-item__video
+    ul.prices-list,
+    .prices-link
+      display: none
+  section.teacher.allteachers 
+    .teacher-button
+      background: none
+      display none
+    .allteachers-items
+      width : 100%
+      float: none
+    .allteachers-images
+      width 100%
+      position: static
+  .portfolio-advantages li
+    min-height: 30px
+  .portfolio-content.content
+    width: 100%
+    .section-title,
+    .portfolio-advantages
+      width: 85.46875%
+      margin 0 auto
+  .programme-item__left,
+  .programme-item__right
+    width 100%
+    margin-right: 0
+  .programme-item__content
+    flex-wrap: wrap
+  
+  .programme-item__theory li,
+  .programme-practice__title
+    set-font-size(24px)
+  .programme-item__theory 
+    padding-top: 40px
+    li
+      line-height 1
 
 @media only screen and (max-width : 480px)
   html

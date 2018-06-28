@@ -14,7 +14,6 @@
     &__wrapper
       display flex
       justify-content: space-between
-      align-items: center
     &__left
       width 42.0997921%
       img
@@ -23,6 +22,9 @@
       width 54.7817048%
       p
         color: #171a1a
+        &:first-child
+          margin-top: 0
+          
   .process-tabs
     display: table
     table-layout: fixed
@@ -41,7 +43,7 @@
       position: relative
       overflow: hidden
       cursor: pointer
-
+      font-family $PTBold
       &:before
         z-index: -1
         position: absolute

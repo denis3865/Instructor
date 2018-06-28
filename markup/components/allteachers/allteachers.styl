@@ -1,8 +1,11 @@
 section.teacher.allteachers
   .allteachers-wrapper
-    display flex
-    justify-content: space-between
-    align-items: flex-end
+    display block
+    position relative
+    &::after
+      content ''
+      clear both
+      display: block
   .teacher-content
     background: none
     padding-bottom 0
@@ -18,6 +21,7 @@ section.teacher.allteachers
       set-font-size(25px)
       transition: all 0.3s ease
       cursor pointer 
+      font-family $PTBold
       margin-right 2%
       &:last-child
         margin-right 0
@@ -27,35 +31,33 @@ section.teacher.allteachers
   .teacher-information p
     line-height 20px
   .allteachers-items
-    min-height: 285px
     position relative
     width 65.81352834%
     padding-bottom 30px
+    float left
   .allteachers-item
-    position absolute
-    min-height: 285px
-    left 0
-    top: 0
     width 100%
     height 100%
     opacity 0
+    display: none
     transition: all 0.25s ease 
     &.active
       opacity 1
+      display: block
   .teacher-button
     width 100%
   .allteachers-images
-    height 285px
-    position relative
+    right 0
+    position absolute
+    bottom: 0
     width: 34.18647166%
     img
-      width 100%
-      height 285px
+      width 80%
+      margin 0 auto
       object-fit: contain
       opacity: 0
       transition all 0.25s ease
-      position absolute
-      left 0
-      top 0
+      display none
       &.active
+        display: block
         opacity 1
