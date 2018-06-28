@@ -6,6 +6,8 @@ html(class="no-js", lang="ru")
   include ../components/center/center
   include ../components/advantages/advantages
   include ../components/teacher/teacher
+  include ../components/forms/forms
+  include ../components/interaction/interaction
   include ../components/footer/footer
   head
     +head(head.defaults)
@@ -21,6 +23,10 @@ html(class="no-js", lang="ru")
     +teacher()
 
     +teacher().right
+
+    +forms()
+
+    +interaction()
 
     +footer()
 
