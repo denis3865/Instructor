@@ -1,5 +1,37 @@
 .reviews-page
-  padding-top 30px
+  padding-top 80px
   padding-bottom 60px
+  position relative
   ul.breadcrumbs li.active a
     color $titleColor
+  .reviews-controll
+    background: #313333;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 50px;
+    ul
+      display flex
+      justify-content: center
+      align-items: center
+      margin 0 auto
+      max-width: 1094px
+      height 45px
+      flex-wrap: wrap
+      li
+        margin-right 40px
+        white-space: nowrap
+        &:last-child
+          margin-right 0
+        &.active,
+        &:hover
+          a
+            color: $accentColor
+          
+      a
+        font-family: $PTBold
+        set-font-size(14px)
+        text-transform: uppercase;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;

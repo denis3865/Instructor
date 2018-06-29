@@ -1,0 +1,43 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head
+  
+  head
+    +head(head.defaults)
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+  body.nav-cad
+    style(type='text/css').
+      body.nav-cad nav.nav-cad{
+        width: 100%
+      }
+      body.nav-cad ul {
+        text-align: center
+      }
+      body.nav-cad li{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #333333
+      }
+      body.nav-cad li a{
+        color: #333333;
+        font-size: 30px;
+      }
+    
+    
+    nav.nav-cad
+      ul
+        li 
+          a(href='index.html') Главная
+        li 
+          a(href='course.html') Страница курса
+        li
+          a(href='course-list.html') Список курсов
+        li 
+          a(href='about-page.html') О нас
+        li 
+          a(href='404.html') 404
+        li 
+          a(href='reviews-page.html') Страница отзывов

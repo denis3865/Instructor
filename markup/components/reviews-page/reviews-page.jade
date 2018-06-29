@@ -3,6 +3,20 @@ include ../button/button
 include ../breadcrumbs/breadcrumbs
 mixin reviews-page(data)
   section.reviews-page
+    .reviews-controll
+      ul.content
+        li.active
+          a(href='#') Все отзывы
+        li
+          a(href='#') AutoCAD 
+        li
+          a(href='#') Инвентор
+        li
+          a(href='#') SolidWorks
+        li
+          a(href='#') Компас
+        li
+          a(href='#') ИГ
     .reviews-page__content.content
       +breadcrumbs()
       +title('Отзывы')
