@@ -7,3 +7,9 @@ $(menuItems).focus(function(){
 $(menuItems).focusout(function(){
   $('.submenu-list').css('display','none')
 })
+
+$( window ).resize(function() {
+ if(window.innerWidth > 768){
+   $('nav.menu').css('display','block')
+ } 
+});

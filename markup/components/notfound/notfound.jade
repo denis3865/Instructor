@@ -1,0 +1,10 @@
+include ../button/button
+mixin notfound(data)
+  section.notfound
+    .notfound-content.content
+      .notfound-number 404
+      .notfound-title Такой страницы нет
+      .notfound-buttons
+        +button('На главную')
+        +button('Курсы')
+        +button('Корпоративное обучение')

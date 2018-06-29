@@ -214,6 +214,18 @@
   .center-video
     height 400px
 
+  .notfound-buttons
+    flex-wrap: wrap
+    justify-content: center
+    .button
+      margin-top 20px
+      &:first-child
+        margin-right 30px
+  .notfound
+    padding-top 80px
+    &-title
+      margin: 40px 0
+
 
 
 @media only screen and (max-width : 768px)
@@ -799,6 +811,27 @@
     .menu-list .submenu-list a
       font-size: 1.1rem
 
+  .reviews-page
+    .reviews-button
+      display block
+      .button,
+      .button a
+        width 100%
+
+  // 404 page
+  .notfound-buttons
+    flex-direction: column
+    .button:first-child
+      margin-right : 0
+    .button
+      width 100%
+      a
+        width 100%
+  .notfound
+    padding-top 40px
+    padding-bottom 60px
+    &-title
+      font-size: 2.5rem
 
 @media only screen and (max-width : 480px)
   html

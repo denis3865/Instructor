@@ -1,0 +1,57 @@
+include ../title/title
+include ../button/button
+include ../breadcrumbs/breadcrumbs
+mixin reviews-page(data)
+  section.reviews-page
+    .reviews-page__content.content
+      +breadcrumbs()
+      +title('Отзывы')
+      .reviews-items
+        //- Reviews Item
+        .reviews-item
+          .reviews-item__left
+            .reviews-item__photo
+              img(src='static/img/assets/reviews/jen.jpg')
+            .reviews-item__stars
+              != jadeHelpers.Icon.call(locals, {iconName: 'star', className: 'star', iconWidth: '20', iconHeight: '20'})
+              != jadeHelpers.Icon.call(locals, {iconName: 'star', className: 'star', iconWidth: '20', iconHeight: '20'})
+              != jadeHelpers.Icon.call(locals, {iconName: 'star', className: 'star', iconWidth: '20', iconHeight: '20'})
+              != jadeHelpers.Icon.call(locals, {iconName: 'star', className: 'star', iconWidth: '20', iconHeight: '20'})
+          .reviews-item__right
+            .reviews-item__name Станислава, аспирантка
+            .reviews-item__link
+              a(href='https:vk.com/stoizsta') vk.com/stoizsta
+            .reviews-item__course Базовый курс SolidWorks
+            .reviews-item__text
+              p Андрей Леонидович - один из редких преподавателей, с которыми начинаешь все понимать. Я очень долго пытался научиться работать с CAD-программами, но только благодаря урокам Андрея Леонидовича мне удалось обрести уверенность в своих силах, понять принципы работы в SolidWorks и научиться воплощать в этой программе некоторые свои идеи. Работать с Андреем Леонидовичем очень приятно - он очень понятно все объясняет, урок как бы постепенно движется в горку, и в конце становится понятным то, что изначально казалось секретными знаниями, но, кроме этого, это замечательно тактичный преподаватель, который умеет толкнуть Вас к автономии в работе с изучаемой программой. Мне также очень понравились туториалы, которые пишет Андрей Леонидович, и его методички, сделанные очень качественно.
+        //- Reviews Item
+        .reviews-item
+          .reviews-item__left
+            .reviews-item__photo
+              img(src='static/img/assets/reviews/jen.jpg')
+            .reviews-item__stars
+              != jadeHelpers.Icon.call(locals, {iconName: 'star', className: 'star', iconWidth: '20', iconHeight: '20'})
+          .reviews-item__right
+            .reviews-item__name Станислава, аспирантка
+            .reviews-item__link
+              a(href='https:vk.com/stoizsta') vk.com/stoizsta
+            .reviews-item__course Базовый курс SolidWorks
+            .reviews-item__text
+              p Андрей Леонидович - один из редких преподавателей, с которыми начинаешь все понимать. Я очень долго пытался научиться работать с CAD-программами, но только благодаря урокам Андрея Леонидовича мне удалось обрести уверенность в своих силах, понять принципы работы в SolidWorks и научиться воплощать в этой программе некоторые свои идеи. Работать с Андреем Леонидовичем очень приятно - он очень понятно все объясняет, урок как бы постепенно движется в горку, и в конце становится понятным то, что изначально казалось секретными знаниями, но, кроме этого, это замечательно тактичный преподаватель, который умеет толкнуть Вас к автономии в работе с изучаемой программой. Мне также очень понравились туториалы, которые пишет Андрей Леонидович, и его методички, сделанные очень качественно.
+        //- Reviews Item
+        .reviews-item
+          .reviews-item__left
+            .reviews-item__photo
+              img(src='static/img/assets/reviews/jen.jpg')
+            .reviews-item__stars
+              != jadeHelpers.Icon.call(locals, {iconName: 'star', className: 'star', iconWidth: '20', iconHeight: '20'})
+          .reviews-item__right
+            .reviews-item__name Станислава, аспирантка
+            .reviews-item__link
+              a(href='https:vk.com/stoizsta') vk.com/stoizsta
+            .reviews-item__course Базовый курс SolidWorks
+            .reviews-item__text
+              p Андрей Леонидович - один из редких преподавателей, с которыми начинаешь все понимать. Я очень долго пытался научиться работать с CAD-программами, но только благодаря урокам Андрея Леонидовича мне удалось обрести уверенность в своих силах, понять принципы работы в SolidWorks и научиться воплощать в этой программе некоторые свои идеи. Работать с Андреем Леонидовичем очень приятно - он очень понятно все объясняет, урок как бы постепенно движется в горку, и в конце становится понятным то, что изначально казалось секретными знаниями, но, кроме этого, это замечательно тактичный преподаватель, который умеет толкнуть Вас к автономии в работе с изучаемой программой. Мне также очень понравились туториалы, которые пишет Андрей Леонидович, и его методички, сделанные очень качественно.
+
+      .reviews-button
+        +button('Загрузить еще')
