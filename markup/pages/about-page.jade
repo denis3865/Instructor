@@ -8,9 +8,11 @@ html(class="no-js", lang="ru")
   include ../components/teacher/teacher
   include ../components/forms/forms
   include ../components/interaction/interaction
+  include ../components/contacts/contacts
   include ../components/footer/footer
   head
     +head(head.defaults)
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
   body.page
     |%=symbols=%
 
@@ -27,6 +29,8 @@ html(class="no-js", lang="ru")
     +forms()
 
     +interaction()
+
+    +contacts()
 
     +footer()
 

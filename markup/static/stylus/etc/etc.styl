@@ -123,7 +123,7 @@
       letter-spacing -0.3px
     .teacher-content
       padding-bottom 20px
-      background-size: 40%
+      background-size: 35%
       background-position 103% bottom
     .teacher-information, 
     .teacher-button
@@ -206,6 +206,11 @@
   section.teacher.allteachers .allteachers-images img
     height auto
     width 100%
+
+
+  // CL ABOUT
+  .center-video
+    height 400px
 
 
 
@@ -351,6 +356,18 @@
       line-height 1.3
       set-font-size(12px)
   
+  // CL ABOUT
+  .center-video
+    height 300px
+  .interaction .process-tabs >li
+    set-font-size(20px)
+  .interaction-step__list,
+  .interaction-step__paragraph
+    width 90%
+  .interaction-step__name
+    margin-bottom 10px
+  .process-items
+    padding-bottom 70px
 
 
 @media only screen and (max-width : 640px)
@@ -749,8 +766,31 @@
       margin-right 10%
     &:nth-child(2n)
       margin-right 0
-    
-  
+
+  section.forms 
+    .forms-item__left
+      width 100%
+      margin-right 0
+      margin-bottom 20px
+    .forms-item__right
+      width 100%
+    .forms-item__content
+      flex-wrap: wrap
+  .interaction-step__list
+    margin-top 20px 
+    li
+      font-size: 1.5rem
+  section.interaction
+    .form-download
+      font-size: 1.5rem
+      a
+        font-size: 1.5rem
+  .interaction-step__list, 
+  .interaction-step__paragraph
+    width 100%
+  .interaction-step__name
+    font-size: 2rem
+
 @media only screen and (max-width : 480px)
   html
     font-size: 12px
@@ -802,3 +842,16 @@
     font-size: 1.8rem
   .coursetop-video
     height 380px
+
+  // CL ABOUT
+  .center-video
+    height 200px
+  .interaction .process-tabs >li
+    padding: 20px 5px 25px 5px
+  .interaction-content.content
+    width 100%
+  .interaction
+    padding-bottom: 30px
+    margin-bottom: 40px
+    .process-item
+      border-radius: 0
