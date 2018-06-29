@@ -12,6 +12,7 @@
     margin-top: 0
   h3
     set-font-size(35px)
+    line-height 1.7
   .about-information__text p
     margin-bottom 10px
   .button a
@@ -66,6 +67,7 @@
 
   form
     width 80%
+
 
 @media only screen and (max-width : 992px)
   .about-video
@@ -230,7 +232,7 @@
     z-index 999
     display none
     a
-      font-size: 1rem
+      font-size: 1.2rem
     .menu-list
       width: 85.46875%;
       margin: 0 auto;
@@ -247,7 +249,7 @@
         flex-direction: column
         align-items: flex-start
         a
-          font-size: 0.75rem
+          font-size: 0.9rem
       & > li
         margin-bottom 5px
       
@@ -743,7 +745,7 @@
       margin: 0 auto
       p
         set-font-size(24px)
-        line-height 1
+        line-height 1.3
     .links-item
       flex-wrap: wrap
 
@@ -791,6 +793,13 @@
   .interaction-step__name
     font-size: 2rem
 
+  nav.menu 
+    a
+      font-size 1.5rem
+    .menu-list .submenu-list a
+      font-size: 1.1rem
+
+
 @media only screen and (max-width : 480px)
   html
     font-size: 12px
@@ -830,12 +839,18 @@
   // COurse page
   .portfolio-advantages li
     font-size: 1.1rem
-  section.teacher.allteachers .teachers-names li
-    font-size: 1rem
-    white-space: nowrap
+  section.teacher.allteachers 
+    .teachers-names ul
+      flex-wrap wrap
+      li
+        font-size: 1.6rem
+        white-space: nowrap
   .programme-item__left img,
   .programme-item__left 
-    height: auto
+    height: 200px
+  .programme-item__left
+    .name-video
+      height: 40px
   .prices .price, 
   .prices-nmbr,
   .prices-name h4
@@ -855,3 +870,12 @@
     margin-bottom: 40px
     .process-item
       border-radius: 0
+
+  .coursetop ul.coursetop-paragraph__list li
+    font-size: 1.25rem
+
+  nav.menu 
+    a
+      font-size 2rem
+    .menu-list .submenu-list a
+      font-size: 1.5rem
