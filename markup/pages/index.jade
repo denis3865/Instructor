@@ -2,6 +2,7 @@ doctype html
 html(class="no-js", lang="ru")
 
   include ../components/head/head
+  include ../components/sale/sale
   include ../components/header/header
   include ../components/slideshow/slideshow
   include ../components/about/about
@@ -11,12 +12,15 @@ html(class="no-js", lang="ru")
   include ../components/reviews/reviews
   include ../components/contacts/contacts
   include ../components/footer/footer
+  
   head
     +head(head.defaults)
     script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
   body.page
     |%=symbols=%
 
+    +sale()
+    
     +header()
 
     +slideshow()

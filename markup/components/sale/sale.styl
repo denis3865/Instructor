@@ -1,0 +1,31 @@
+section.sale
+  padding-top 0
+  background: #2b91d9;
+  background: -moz-linear-gradient(left, #2b91d9 1%, #6454e5 100%);
+  background: -webkit-linear-gradient(left, #2b91d9 1%,#6454e5 100%);
+  background: linear-gradient(to right, #2b91d9 1%,#6454e5 100%);
+  height 35px
+  .sale-wrapper
+    position relative
+  .sale-text
+    display flex
+    justify-content: center
+    align-items: center
+    height 35px
+    set-font-size(14px)
+    color: #ffffff
+  .sale-close
+    position absolute
+    background: url('../img/assets/sale/cancel.svg') no-repeat center
+    width 14px
+    height 14px
+    right 20px
+    top: 50%
+    cursor pointer
+    margin-top -7px
+  &.active
+    position fixed
+    z-index 100
+    left 0
+    top 0
+    width 100%
