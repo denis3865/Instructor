@@ -11,5 +11,9 @@ $(menuItems).focusout(function(){
 $( window ).resize(function() {
  if(window.innerWidth > 768){
    $('nav.menu').css('display','block')
+ }
+ else if(window.innerWidth == 768){
+   $('nav.menu').css('display','none')
  } 
+
 });
