@@ -11,7 +11,16 @@ mixin prices(data)
           .prices-item__content
             .prices-name 
               h4 Индивидуально
-              div или
+            .prices-quantity
+              .prices-quantity__hours 18 ак.ч
+              .prices-quantity__lesons 5 занятий
+            .price 17 990 ₽
+            .prices-button
+              +button('Записаться')
+        //- Prices Item
+        .prices-item
+          .prices-item__content
+            .prices-name 
               h4 По Skype
             .prices-quantity
               .prices-quantity__hours 18 ак.ч
